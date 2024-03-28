@@ -7,6 +7,10 @@ html {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+a {
+	text-decoration: none;
+}
+
 .container {
 	margin: 0 auto;
 	width: 960px;
@@ -79,6 +83,41 @@ h1 {
 	display: block;
 	padding: 10px;
 	text-decoration: none;
+}
+
+.navbar {
+	height: 90px;
+	background-color: bisque;
+	padding: 20px 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu-links {
+	display: flex;
+	gap: 24px;
+}
+
+.menu-links a {
+	font-weight: 500;
+	color: #3d1e1e;
+	padding: 8px 16px;
+}
+
+.menu-links a:hover {
+	color: #dfcdcd
+}
+
+.menu-links :hover {
+	background-color: rgb(44, 33, 20);
+}
+
+.menu-btn {
+	font-size: 32px;
+	color: rgb(5, 0, 0);
+	display: flex;
+	cursor: pointer;
 }
 
 .main-footer {
