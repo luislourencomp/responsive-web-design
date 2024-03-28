@@ -29,8 +29,9 @@ h1 {
 }
 
 .content-main {
-	float: left;
 	width: 593px;
+	display: inline-block;
+	margin: 15px 0px 0px 15px;
 }
 
 .hero {
@@ -114,9 +115,9 @@ h1 {
 }
 
 .menu-btn {
-	font-size: 32px;
-	color: rgb(5, 0, 0);
-	display: flex;
+	font-size: 36px;
+	color: rgb(20, 14, 14);
+	display: none;
 	cursor: pointer;
 }
 
@@ -129,4 +130,27 @@ h1 {
 	padding: 15px;
 	text-align: center;
 	width: 100%;
+}
+
+@media (max-width: 53rem) {
+    .menu-links {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+}
+
+@media (max-width: 53rem) {
+	.main-nav li,
+    .content-main,
+    .content-sidebar {
+        float: none;
+    }
+
+	.content-sidebar {
+		width: 25%;
+    }
 }
